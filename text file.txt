@@ -1,7 +1,15 @@
-Q1. HTML stands for hyper text markup language. html defines the structure and content of web pages. 
+Q1. What is HTML?
+->HTML stands for hyper text markup language. html defines the structure and content of web pages. 
 
-Q2. 1. <body></body>
-    2. <head></head>
-    3. <title></title>
-    4. <div></div>
-    5. <img></img>
+Q2. What are HTML Tags?
+->  There are two types of tags. 1. Paired Tags 2. Unpaired Tags
+    Paired tag are same 2 tags with opeing and closing tag.
+      For eg:  1. <body></body>
+               2. <head></head>
+               3. <title></title>
+               4. <div></div>
+               5. <img></img>
+    Unpaired tag is only open tag.
+      For eg 1. <br>
+             2. <hr>
+   
