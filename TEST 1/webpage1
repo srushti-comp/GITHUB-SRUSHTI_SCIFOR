@@ -1,1 +1,13 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>First webpage</title>
+        </head>
+        <body>
+            <h1> Hello My Dear Friends</h1>
+            <h2> Welcome to Frist Webpage</h2>
+            <p> Thank You</p>
+        </body>
+        </html>
