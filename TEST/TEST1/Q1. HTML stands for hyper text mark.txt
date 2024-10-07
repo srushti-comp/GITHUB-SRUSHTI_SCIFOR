@@ -1,7 +1,0 @@
-Q1. HTML stands for hyper text markup language. html defines the structure and content of web pages. 
-
-Q2. 1. <body></body>
-    2. <head></head>
-    3. <title></title>
-    4. <div></div>
-    5. <img></img>
