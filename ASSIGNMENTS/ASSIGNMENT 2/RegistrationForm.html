@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Login Form</title>
+    
+<style>
+    body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  
+ 
+}
+body{
+
+    background-image: url("https://img.freepik.com/premium-photo/group-people-sitting-room-with-large-window_35642-4986.jpg?size=626&ext=jpg&ga=GA1.1.674357248.1727932637&semt=ais_hybrid");
+    background-size: cover;
+    
+}
+.main {
+    background-image: url("https://img.freepik.com/premium-photo/group-people-sitting-room-with-large-window_35642-4986.jpg?size=626&ext=jpg&ga=GA1.1.674357248.1727932637&semt=ais_hybrid");
+box-shadow:black;
+opacity: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(8, 8, 8, 0.2);
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+    
+}
+
+h1 {
+    color: #73e9f8;
+}
+h3{
+    color: rgb(8, 8, 8);
+}
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #050505;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: rgb(252, 252, 252);
+    cursor: pointer;
+    background-color: #013603;
+    width: 100%;
+    font-size: 16px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: whitesmoke;
+}
+</style>
+
+</head>
+<body>
+    <div class="main">
+        <h1>Welcome</h1>
+        <h3>Enter your login credentials</h3>
+        <form action="">
+              <label for="first">
+                    Username:
+              </label>
+              <input type="text" 
+                     id="first" 
+                     name="first" minlength="4" maxlength="10"
+                     placeholder="Enter your Username" required >
+                     <label for=""></label>
+
+             <label for="Email">
+                     Email:
+               </label>
+                  <input type="text" 
+                         id="Email" 
+                         Email="Email"
+                         placeholder="Enter your Email Address" required>
+                         <label for=""></label>
+
+
+             <label for="password">
+                     Password:
+                </label>
+                    <input type="password"
+                             id="password" 
+                             name="password" minlength="8" maxlength="15"
+                             placeholder="Enter your Password" required>
+
+                
+            <label for="Age">
+                    Age:
+              </label>
+              <input type="number" 
+                     id="age" 
+                     Age="Age" min="18" max="100"
+                     placeholder="Enter your Age" required>
+                     <label for=""></label>
+
+                     <label for="ZipCode">
+                        ZipCode:
+                  </label>
+                  <input type="text" 
+                         id="Zip" 
+                         ZipCode="ZipCode" minlength="6" maxlength="6"
+                         placeholder="Enter your Zipcode" required>
+                         <label for=""></label>
+            
+
+              <div class="wrap">
+                    <button type="submit"
+                            onclick="solve()">
+                          Submit
+                    </button>
+              </div>
+        </form>
+        <p>Not registered?
+              <a href="#"
+                 style="text-decoration: none;">
+                    Create an account
+              </a>
+        </p>
+  </div>
+</body>
+
+</html>
