@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <title> JavaScript Arithmetic Operators</title>
+            <script>
+            
+            function performArithmetic(num1, num2, operator) {
+    switch (operator) {
+      case '+':
+        return num1 + num2;
+      case '-':
+        return num1 - num2;
+      case '*':
+        return num1 * num2;
+      case '/':
+        if (num2 === 0) {
+          return "Division by zero not allowed!";
+        }
+        return num1 / num2;
+      default:
+        return "Invalid operator";
+    }
+  }
+  
+  let result = performArithmetic(10, 5, '+');
+  console.log(result); // Output: 15
+  
+  result = performArithmetic(10, 5, '-');
+  console.log(result); // Output: 5
+  
+  result = performArithmetic(10, 5, '*');
+  console.log(result); // Output: 50
+  
+  result = performArithmetic(10, 5, '/');
+  console.log(result); // Output: 2
+  </script>
+    </head>
+</html>
+  
