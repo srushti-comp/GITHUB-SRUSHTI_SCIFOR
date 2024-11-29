@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse and Sort Array</title>
+</head>
+<body>
+    <script>
+        function reverseAndSortArray(charArray) {
+            // Step a: Reverse the order of elements in the array
+            let reversedArray = charArray.reverse();
+            
+            // Step b: Sort the reversed array in alphabetical order
+            let sortedArray = reversedArray.sort();
+            
+            // Use document.write to display the sorted array
+            document.write("Sorted Array: " + sortedArray.join(", "));
+        }
+
+        // Example usage:
+        let inputArray = ['d', 'a', 'b', 'c'];
+        
+        // Call the function and display the result using document.write
+        reverseAndSortArray(inputArray);
+    </script>
+</body>
+</html>
+<style>
+    body{
+        background-color: aquamarine;
+        font-size: 50px;
+        
+
+    }
+</style>
