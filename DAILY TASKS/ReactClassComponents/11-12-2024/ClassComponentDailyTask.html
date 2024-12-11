@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Class Component Example</title>
+  <!-- React and ReactDOM via CDN -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<style>
+    body{
+        background-color:bisque;
+    }
+    span{
+        color:blue;
+    }
+
+</style>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    // Define the React class component
+    class MyComponent extends React.Component {
+      render() {
+        return (
+          <div>
+            <h1 style={styles.heading}>This is a Heading</h1>
+            <p style={styles.paragraph}>This is a paragraph with some <span>custom</span> styling applied. 
+                It provides more information or description related to the heading above.
+                React.js, often referred to as just React, is a popular open-source JavaScript 
+                library used for building user interfaces, particularly for <span>single-page</span> applications 
+                where data changes dynamically over time. It was developed and is maintained by Facebook 
+                (now Meta), along with a large community of developers. React simplifies the development
+                 of interactive UIs by allowing developers to build reusable UI components.</p>
+          </div>
+        );
+      }
+    }
+
+    // Define inline styles
+    const styles = {
+       
+      heading: {
+        fontSize: '32px',
+        color: '#333',
+        textAlign: 'center',
+        margin: '20px 0',
+      },
+      paragraph: {
+        fontSize: '18px',
+        color: '#555',
+        lineHeight: '1.6',
+        textAlign: 'center',
+        margin: '10px 20px',
+      },
+      
+      
+      
+      
+    };
+    
+
+    // Render the component to the DOM
+    ReactDOM.render(<MyComponent />, document.getElementById('root'));
+  </script>
+</body>
+</html>
