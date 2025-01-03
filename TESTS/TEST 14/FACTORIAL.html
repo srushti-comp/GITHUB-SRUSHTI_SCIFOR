@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+
+    <body>
+        <div class="card">
+            <div class="OddEven">
+            
+            </div>
+
+    </body>
+
+<!--CSS CODE-->
+    <style>
+        .card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+    </style>
+
+    <!--JAVASCRIPT CODE-->
+    <script>
+        // Function to calculate the factorial of a number
+        function calculateFactorial() {
+            // Get the input value from the user
+            var num = document.getElementById("numberInput").value;
+
+            // Check if the input is a valid number
+            if (isNaN(num) || num === "" || num < 0) {
+                alert("Please enter a valid non-negative number");
+                return;
+            }
+
+            // Convert the input value to a number
+            num = parseInt(num);
+            
+            // Calculate the factorial
+            var factorial = 1;
+            for (var i = 1; i <= num; i++) {
+                factorial *= i;
+            }
+
+            // Display the result
+            document.getElementById("result").innerText = "The factorial of " + num + " is: " + factorial;
+        }
+    </script>
+</head>
+<body>
+    <h2>Factorial Calculator</h2>
+
+    <!-- Input field for the user to enter a number -->
+    <label for="numberInput">Enter a non-negative number:</label>
+    <input type="text" id="numberInput" />
+
+    <!-- Button to trigger the calculateFactorial function -->
+    <button onclick="calculateFactorial()">Calculate Factorial</button>
+
+    <!-- Paragraph to display the result -->
+    <p id="result"></p>
+</body>
+</html>

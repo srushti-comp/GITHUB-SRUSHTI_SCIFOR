@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd and Even Checker</title>
+    <body>
+        <div class="card">
+            <div class="OddEven">
+            
+            </div>
+
+    </body>
+
+<!--CSS CODE-->
+    <style>
+        .card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+    </style>
+
+    <!--JAVASCRIPT CODE-->
+   
+    <script>
+        // Function to check if a number is even or odd
+        function checkOddEven() {
+            // Get the input value from the user
+            var num = document.getElementById("numberInput").value;
+
+            // Check if the input is a valid number
+            if (isNaN(num) || num === "") {
+                alert("Please enter a valid number");
+                return;
+            }
+
+            // Convert the input value to a number
+            num = parseInt(num);
+
+            // Check if the number is even or odd
+            if (num % 2 === 0) {
+                document.getElementById("result").innerText = num + " is an Even number";
+            } else {
+                document.getElementById("result").innerText = num + " is an Odd number";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Check if a Number is Odd or Even</h2>
+
+    <!-- Input field for the user to enter a number -->
+    <label for="numberInput">Enter a number:</label>
+    <input type="text" id="numberInput" />
+
+    <!-- Button to trigger the checkOddEven function -->
+    <button onclick="checkOddEven()">Check</button>
+
+    <!-- Paragraph to display the result -->
+    <p id="result"></p>
+</body>
+</html>
